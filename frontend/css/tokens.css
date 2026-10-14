@@ -1,0 +1,28 @@
+:root {
+  --bg: #EAF3FB;
+  --surface: #FFFFFF;
+  --ink: #16283C;
+  --ink-2: #56697D;
+  --line: #D3E1EE;
+  --primary: #2A7DE1;
+  --primary-d: #1B5DB0;
+  --hat: #FFB81C;
+  --hat-d: #D98F00;
+  --danger: #E5484D;
+  --ok: #2FA36B;
+
+  --r-card: 18px;
+  --r-ctl: 12px;
+
+  --font-display: 'Jua', 'Noto Sans KR', system-ui, sans-serif;
+  --font-body: 'Noto Sans KR', system-ui, -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+
+  /* 일한 등급 색: F 돌색 → A 빨강 → S 금색 */
+  --g-F: #8C8C86;
+  --g-E: #B8895B;
+  --g-D: #4FAE6A;
+  --g-C: #3A8FD6;
+  --g-B: #8A5CD0;
+  --g-A: #E03A3E;
+  --g-S: #F2B100;
+}

@@ -1,0 +1,11 @@
+.rank { flex: none; width: 34px; text-align: center; font-family: var(--font-display); font-size: 20px; color: var(--ink-2); }
+.rank--1 { color: var(--g-S); } .rank--2 { color: #8E9AA6; } .rank--3 { color: var(--g-E); }
+.stat { text-align: right; font-family: var(--font-display); font-size: 18px; }
+.site-card { display: flex; flex-direction: column; gap: 10px; }
+.site-card .top { display: flex; align-items: flex-start; gap: 10px; }
+.site-card .price { font-family: var(--font-display); font-size: 20px; color: var(--hat-d); }
+.key { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; word-break: break-all; background: #F1F6FB; border-radius: 8px; padding: 6px 8px; }
+.role-select { min-height: 38px; border-radius: 10px; border: 2px solid var(--line); background: var(--surface); padding: 0 8px; }
+.amount-row { display: flex; gap: 8px; }
+.quick { display: flex; gap: 6px; flex-wrap: wrap; }
+.results { min-height: 48px; }

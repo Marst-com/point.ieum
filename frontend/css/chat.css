@@ -1,0 +1,16 @@
+.chat-screen { display: flex; flex-direction: column; min-height: 100dvh; }
+.messages { flex: 1; display: flex; flex-direction: column; gap: 6px; padding: 8px 14px 12px; }
+.msg { max-width: 82%; display: flex; flex-direction: column; gap: 2px; }
+.msg .who { font-size: 12px; color: var(--ink-2); padding-left: 4px; }
+.msg .bubble { padding: 8px 12px; border-radius: 16px 16px 16px 4px; background: var(--surface); border: 2px solid var(--line); word-break: break-word; white-space: pre-wrap; }
+.msg time { font-size: 11px; color: var(--ink-2); padding: 0 4px; }
+.msg--mine { align-self: flex-end; align-items: flex-end; }
+.msg--mine .bubble { background: var(--primary); border-color: var(--primary-d); color: #fff; border-radius: 16px 16px 4px 16px; }
+.composer {
+  position: sticky; bottom: 0; display: flex; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(234, 243, 251, .96); border-top: 2px solid var(--line);
+}
+.composer .input { flex: 1; }
+.room-last { font-size: 14px; color: var(--ink-2); }
+.check-row { display: flex; align-items: center; gap: 10px; }
+.check-row input { width: 22px; height: 22px; accent-color: var(--primary); }

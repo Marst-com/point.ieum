@@ -1,0 +1,31 @@
+{
+  "name": "ieum-pointsystem",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IEUM PointSystem — 일하기·상점·톡·등급·친구가 있는 포인트 시스템",
+  "main": "server/index.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "USE_MEMORY_DB=1 DEMO_SEED=1 node server/index.js",
+    "test": "NODE_ENV=test node --test tests/*.test.js",
+    "check:front": "node scripts/checkFrontend.js",
+    "owner": "node scripts/createOwner.js",
+    "sync:check": "node scripts/syncShared.js --search",
+    "sync:repair": "node scripts/syncShared.js --repair --search",
+    "search:node": "node search/bin/shardNode.js",
+    "search:reindex": "node scripts/reindexSearch.js",
+    "bench:search": "node --expose-gc scripts/benchSearch.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "firebase-admin": "^12.6.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.7.5"
+  }
+}
